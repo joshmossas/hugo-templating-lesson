@@ -1,0 +1,9 @@
+{{ define "css" }}
+    <!-- your css file goes here -->
+{{ end }}
+
+{{ define "main" }}
+
+    <h1>This is a Single Page for "{{ if .Title }}{{ .Title }}{{ else }}{{ .Params.Name }}{{ end }}"</h1>
+
+{{ end }}

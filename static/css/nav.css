@@ -1,0 +1,120 @@
+html {
+    font-family: arial;
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+}
+
+.j-section {
+    padding: 100px 0px;
+}
+
+.j-container {
+    margin: auto;
+    max-width: 800px;
+}
+
+section.homepageBanner {
+    display: block;
+    padding: 100px 50px;
+    background-size: cover;
+    color: white;
+    position: relative;
+    background: #333;
+}
+
+.homepageBanner h1 {
+    font-size: 50px;
+}
+
+.jbannerContent {
+    z-index: 1;
+    position: relative;
+}
+
+.j-imgOverlay {
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#mnNavButton {
+    background: rgb(32, 32, 32);
+    color: white;
+    display: block;
+    margin: 30px;
+    font-size: 40px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 0px;
+    bottom: 0px;
+}
+
+#mnNavMenu {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: auto;
+    padding: 20px 0px;
+    max-width: 700px;
+    background: white;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    height: 100%;
+    font-size: 20px;
+    transform: translateX(-100%);
+    transition: transform 500ms ease;
+    -moz-transition: transform 500ms ease;
+    z-index: 1000;
+}
+
+#mnNavMenu a {
+    color: #333;
+    text-decoration: none;
+    padding: 30px 50px;
+}
+
+#mnNavMenu a:hover {
+    color: rgb(90, 90, 252);
+}
+
+.active #mnNavMenu {
+    transform: translateX(0px);
+    box-shadow: 0px 0px 20px rgb(43, 43, 43)
+
+}
+
+#navClose {
+    background: black;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: -1;
+    height: 0px;
+    transition: opacity 500ms ease, height 500ms ease;
+    -moz-transition: opacity 500ms ease, height 500ms ease;
+}
+
+.active #navClose {
+    opacity: 0.5;
+    z-index: 999;
+    height: auto;
+}

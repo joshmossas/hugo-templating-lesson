@@ -1,0 +1,15 @@
+{{ define "css" }}
+<!-- your css file goes here -->
+{{ end }}
+
+{{ define "main" }}
+    <!-- this loops through all the pages your list page has access to -->
+    {{ range .Data.Pages }}
+        <div>
+            <h1>
+                <a href="{{ .RelPermalink }}">{{ if .Title }}{{ .Title }}{{ else }}{{ .Params.Name }}{{ end }}</a>
+            </h1>
+        </div>
+    {{ end }}    
+
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="homepageBanner">
+    <div class="j-container">
+            <h1>{{ .Title }}</h1>
+            <h2>{{ .Params.subheading }}</h2>            
+    </div>
+</section>
+<section class="j-section">
+    <div class="j-container">
+        {{ .Content }}
+    </div>
+</section>
+{{ end }}
